@@ -57,9 +57,9 @@ listItem.innerHTML = `${time}`;
 function customTime() {
     var x = document.getElementById("customTime").value;
     var customName = document.getElementById("customName").value;
-    customName = customName.replace(" ","%20");
+    customName = customName.replaceAll(" ","%20");
     var customDescription = document.getElementById("customDescription").value;
-    customDescription = customDescription.replace(" ","%20");
+    customDescription = customDescription.replaceAll(" ","%20");
     x = new Date(x);
     x = x.getTime()/1000
     const changeEventName = document.querySelector("#customURL");

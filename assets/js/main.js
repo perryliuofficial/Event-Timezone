@@ -67,11 +67,15 @@ listItem.innerHTML = `${time}`;
 // ################################################################################
 function customTime() {
     var x = document.getElementById("customTime").value;
+    var customName = document.getElementById("customName").value;
+    customName = customName.replace(" ","%20");
+    var customDescription = document.getElementById("customDescription").value;
+    customDescription = customDescription.replace(" ","%20");
     x = new Date(x);
     x = x.getTime()/1000
     const changeEventName = document.querySelector("#customURL");
-    changeEventName.innerHTML = `${x}`;
-    console.log(x);
+    temp = `https://www.perryliu.co.uk/Event-Timezone/?unixTime=${x}&name=${customName}&description=${customDescription}`;
+    document.getElementById("customURL").value = temp;
 }
 
 // ################################################################################

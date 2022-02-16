@@ -1,0 +1,58 @@
+:root {
+  --ppp-red: #FE5F55;
+  --ppp-red-hover: #b1423a;
+  --ppp-white:#F7F7FF;
+  --ppp-blue:#121F2B;
+  --ppp-transparent:#00000000;
+  --ppp-transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ppp-blue);
+  opacity: 1;
+  background-attachment: fixed;
+  background-image:  linear-gradient(#f7f7ff0c 0.8px, transparent 0.8px), linear-gradient(90deg, #f7f7ff0c 0.8px, transparent 0.8px), linear-gradient(#f7f7ff0c 0.4px, transparent 0.4px), linear-gradient(90deg, #f7f7ff0c 0.4px, #121F2B 0.4px);
+  background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
+  background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
+}
+
+.ppp-nav {
+  background-color: var(--ppp-transparent);
+}
+
+.ppp-underline {
+  text-decoration: none !important;
+}
+
+.ppp-orange-red {
+  color: var(--ppp-red);
+}
+
+.ppp-red-hover:hover {
+  color: var(--ppp-red-hover);
+}
+
+.ppp-white {
+  color:var(--ppp-white);
+}
+
+.ppp-vh {
+  height:100vh;
+}
+
+.ppp-vh-min {
+  min-height:100vh;
+}
+
+.ppp-btn {
+  background-color: var(--ppp-red);
+  color: var(--ppp-white);
+}
+
+.ppp-btn:hover {
+  background-color: var(--ppp-red-hover);
+}

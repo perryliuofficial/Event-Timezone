@@ -1,15 +1,4 @@
 // ################################################################################
-// Bootstrap 5 Toast
-// ################################################################################
-document.getElementById("basicToastBtn").onclick = function() {
-    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-    var toastList = toastElList.map(function(toastEl) {
-        return new bootstrap.Toast(toastEl)
-    })
-    toastList.forEach(toast => toast.show())
-  }
-
-// ################################################################################
 // Get URL Parameters
 // ################################################################################
 // https://example.com/index?unixTime=1646312400&name=Dusk%20Til%20Yawn&description=HelloWorld

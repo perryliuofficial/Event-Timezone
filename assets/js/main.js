@@ -84,6 +84,13 @@ function customTime() {
 function copy() {
     var copyText = document.getElementById("customURL");
     copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
+
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show())
+
 }

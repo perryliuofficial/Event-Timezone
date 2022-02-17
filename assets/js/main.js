@@ -6,8 +6,10 @@ const queryString = window.location.search;
 
 const urlParams = new URLSearchParams(queryString);
 const unixTime = urlParams.get('unixTime');
-const eventName = urlParams.get('name');
-const eventDescription = urlParams.get('description');
+var eventName = urlParams.get('name');
+if (eventName == null){eventName = "Event Name"};
+var eventDescription = urlParams.get('description');
+if (eventDescription == null){eventDescription = "Event Description"};
 
 // ################################################################################
 // Update Name

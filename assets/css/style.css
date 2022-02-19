@@ -50,7 +50,7 @@ body {
 
 .ppp-btn {
   background-color: var(--ppp-red);
-  color: var(--ppp-white);
+  color: black;
 }
 
 .ppp-btn:hover {

@@ -51,14 +51,17 @@
         <div class="col-12 d-flex align-items-center h-100">
           <div>
             <h1 class="h1 ppp-orange-red" id="eventName">Event Time</h1>
-            <h2 class="h3 ppp-white" id="eventTime"></h2>
             <span class="ppp-white" id="eventDescription"></span><br><br>
+            <h2 class="h3 ppp-white" id="eventTimeOriginal"></h2>
+            <span class="ppp-white" id="timezoneOriginal"></span><br><br>
+            <h2 class="h3 ppp-white" id="eventTime"></h2>
+            <span class="ppp-white" id="timezone"></span><br><br>
             <h1 class="h1 ppp-orange-red">Make Your Own</h1>
             <input type="text" class="form-control my-1" id="customName" value="Event Name" onkeyup="customTime()">
             <input type="text" class="form-control my-1" id="customDescription" value="Event Description" onkeyup="customTime()">
             <input type="datetime-local" class="form-control my-1" id="customTime" onchange="customTime()"><br>
             <div class="input-group">
-              <input disabled type="text" class="form-control my-1" value="https://www.perryliu.co.uk/Event-Timezone/?unixTime=1670760000&name=Event%20Name%20&description=Description" id="customURL">
+              <input disabled type="text" class="form-control my-1" value="https://www.perryliu.co.uk/Event-Timezone/?unixTime=1670760000&name=Event%20Name%20&description=Description&timezoneOriginal=Europe%2FLondon" id="customURL">
               <button class="btn ppp-btn my-1" onclick="copy()">Copy Link</button>
             </div>
           </div>

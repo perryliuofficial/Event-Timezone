@@ -81,7 +81,7 @@ function customTime() {
     customDescription = encodeURIComponent(document.querySelector("#customDescription").value);
     customUnixTime = encodeURIComponent(new Date(customTimeNew).getTime()/1000);
     customTimeNew = encodeURIComponent(displayTime(new Date(customTimeNew).getTime()/1000));
-    document.getElementById("customURL").value = `https://www.perryliu.co.uk/Event-Timezone/?unixTime=${customUnixTime}&name=${customName}&description=${customDescription}&timezoneOriginal=${timezone}&timeOriginal=${customTimeNew}`;
+    document.getElementById("customURL").value = `https://eventtime.drunkrobot.co.uk/Event-Timezone/?unixTime=${customUnixTime}&name=${customName}&description=${customDescription}&timezoneOriginal=${timezone}&timeOriginal=${customTimeNew}`;
 }
 
 // ################################################################################

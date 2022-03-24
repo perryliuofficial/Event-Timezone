@@ -2,4 +2,4 @@
 
 Ad-free timezone converter for coordinating events, as an alternative to all the other commercial ones out there.
 
-https://www.perryliu.co.uk/Event-Timezone
+https://eventtime.drunkrobot.co.uk
